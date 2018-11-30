@@ -16,3 +16,6 @@ server:
   port: 9091
 env:
   test3
+girl:
+  name: scarlett
+  age: 22
