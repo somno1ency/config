@@ -16,5 +16,3 @@ server:
   port: 9091
 env:
   dev
-label:
-  release
