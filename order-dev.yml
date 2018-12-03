@@ -16,7 +16,7 @@ spring:
 server:
   port: 9091
 env:
-  dev
+  dev2
 girl:
   name: scarlett joo
-  age: 23
+  age: 22
