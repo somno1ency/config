@@ -3,9 +3,13 @@ spring:
     name: api-gateway
 zuul:
   routes:
-    myProduct:
-      path: /myProduct/**
-      serviceId: product
+    #这里的myProduct:可以随便写,比如aaaa:
+    #/myProduct/1.0/product/order -> /product/1.0/product/order
+    #myProduct:
+    #  path: /myProduct/**
+    #  serviceId: product
+    #简洁写法
+    product: /myProduct/**
   host:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000
