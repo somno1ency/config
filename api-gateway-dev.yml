@@ -5,11 +5,13 @@ zuul:
   routes:
     #这里的myProduct:可以随便写,比如aaaa:
     #/myProduct/1.0/product/order -> /product/1.0/product/order
-    #myProduct:
-    #  path: /myProduct/**
-    #  serviceId: product
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      #设置不过滤掉cookie,默认会过滤,不会传递,将下值设置为空即可
+      sensitiveHeaders: 
     #简洁写法
-    product: /myProduct/**
+    #product: /myProduct/**
   #排除某些路由,无法外部访问
   ignored-patterns:
     - /**/1.0/product/order
