@@ -16,7 +16,7 @@ zuul:
     #product: /myProduct/**
   #排除某些路由,无法外部访问
   ignored-patterns:
-    - /**/1.0/product/order
+    # - /**/1.0/product/order
   host:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000
