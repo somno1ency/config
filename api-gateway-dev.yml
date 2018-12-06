@@ -2,6 +2,8 @@ spring:
   application:
     name: api-gateway
 zuul:
+  #全部服务忽略敏感头(全部服务都可传递cookie),这样不用每个单独设置了
+  sensitive-headers: 
   routes:
     #这里的myProduct:可以随便写,比如aaaa:
     #/myProduct/1.0/product/order -> /product/1.0/product/order
