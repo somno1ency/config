@@ -18,11 +18,11 @@ zuul:
   ignored-patterns:
     # - /**/1.0/product/order
   host:
-    connect-timeout-millis: 15000
+    connect-timeout-millis: 60000
     socket-timeout-millis: 60000
 ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
 server:
   port: 9092
 env:
