@@ -20,9 +20,19 @@ zuul:
   host:
     connect-timeout-millis: 60000
     socket-timeout-millis: 60000
+management:
+  security:
+    enabled: false
 ribbon:
   ReadTimeout: 50000
   ConnectTimeout: 50000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
 server:
   port: 9092
 env:
